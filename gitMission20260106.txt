@@ -1,0 +1,40 @@
+main
+1. 문자 A가 적힌 a.txt 파일을 만들고 커밋, 커밋 메시지는 first commit으로 하겠음
+2. b.txt 파일을 만들고 B를 적은 뒤 커밋, 커밋 메시지는 second commit으로 하겠음
+3. 마지막으로 C가 적힌 c.txt 파일을 만들고 커밋, 커밋 메시지는 third commit으로 하겠음
+
+foo
+4. 문자 D가 저장된 foo_d.txt 파일을 만들고 커밋
+커밋 메시지는 fourth commit으로 하겠음
+5. foo_e.txt 파일을 만들고 E를 적은 뒤 커밋 커밋 메시지는 fifth commit으로 하겠음
+
+foo브랜치를 main브랜치로 병합하기
+
+main
+6
+a.txt파일수정, main으로 수정
+커밋, 커밋 메시지는 main commit
+
+foo
+7
+a.txt파일수정, foo으로 수정
+커밋, 커밋 메시지는 foo commit
+
+main
+8
+foo브랜치 병합
+=> 충돌발생
+=> 둘중 선택하기
+=> 스테이지에 올리고 커밋하기, 자동메시지 선택, VIM화면 나옴
+:wq  (저장하고 종료)
+
+bar
+9. bar_a.txt 파일을 만들고 문자 A를 저장하고 커밋, bar first
+10. bar_b.txt 파일을 만들고 문자 B를 저장하고 커밋, bar second
+
+main
+9.문자 D가 저장된 d.txt파일을 만든 커밋(ninth commit)
+10. 문자 E가 저장된 e.txt파일을 만든 커밋(tenth commit)
+
+bar
+main으로 재배치한다.
